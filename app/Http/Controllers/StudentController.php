@@ -9,7 +9,27 @@ class StudentController extends Controller
 {
     //
     public function welcome(){
-        $user = User::find(1);
-        return view('welcome', compact('user'));
+        $users = User::all();
+        return view('welcome', compact('users'));
+    }
+
+    public function add_user(Request $request){
+//        $user = $request->all();
+//        print_r($request);
+//        exit();
+        try {
+            User::create(array(
+                'name' => $request->name,
+                'email'  =>  $request->email,
+                'password'  =>  "test",
+                'remember_token' =>  $request->token
+            ));
+        }catch (\Exception $e){
+            print_r("Enter New Record in parameters");
+            exit();
+        }
+
+        $users = User::all();
+        return view('welcome', compact('users'));
     }
 }

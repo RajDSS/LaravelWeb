@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'StudentController@welcome')->name('student.welcome');
+Route::get('/add_user', 'StudentController@add_user')->name('student.add.user');
 //Route::get('/', function () {
 //    return view('welcome');
 ////    return "ڀلي ڪري آيا";
