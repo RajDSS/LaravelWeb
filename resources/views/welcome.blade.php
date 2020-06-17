@@ -82,7 +82,7 @@
         </div>
     @endif
     <div class="top-right links">
-        <a href="{{ route('student.add.user')."?name=rehan&email=rehan@gmail.com&toiken=more" }}">ADD USER</a>
+        <a href="{{ route('student.add.user')."?name=rehan&email=rehan@gmail.com&token=more" }}">ADD USER</a>
     </div>
     <div class="content">
         <div class="title m-b-md">

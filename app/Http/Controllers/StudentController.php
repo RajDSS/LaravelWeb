@@ -25,7 +25,7 @@ class StudentController extends Controller
                 'remember_token' =>  $request->token
             ));
         }catch (\Exception $e){
-            print_r("Enter New Record in parameters");
+            print_r("Enter new EMAIL in URL parameters");
             exit();
         }
 
