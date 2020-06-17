@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    //return view('welcome');
-    return "ڀلي ڪري آيا";
-});
+Route::get('/', 'StudentController@welcome')->name('student.welcome');
+//Route::get('/', function () {
+//    return view('welcome');
+////    return "ڀلي ڪري آيا";
+//});
