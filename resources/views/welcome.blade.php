@@ -86,7 +86,7 @@
     </div>
     <div class="content">
         <div class="title m-b-md">
-            USER DETAILS
+            Welcome Welcome, Khushi hui.
         </div>
 
         @foreach ($users as $user)
