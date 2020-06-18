@@ -49,7 +49,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('RDS_HOSTNAME'),
             'port' => env('RDS_PORT'),
-            'database' env('RDS_DB_NAME'),
+            'database' => env('RDS_DB_NAME'),
             'username' => env('RDS_USERNAME'),
             'password' => env('RDS_PASSWORD'),
             'unix_socket' => env('DB_SOCKET', ''),
